@@ -1,0 +1,77 @@
+/* 1. Quy tắc cho body */
+body {
+    font-family: Arial, sans-serif; /* Thay đổi phông chữ */
+    font-size: 16px; /* Kích thước phông chữ */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Màu nền tổng thể */
+}
+
+/* 2. Quy tắc cho header */
+header {
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    text-align: center; /* Căn giữa văn bản */
+    padding: 20px;
+}
+
+/* 3. Quy tắc cho nav */
+nav {
+    background-color: #333; /* Màu nền */
+    color: white;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none; /* Bỏ dấu đầu dòng */
+    display: flex; /* Sắp xếp ngang */
+    justify-content: center; /* Căn giữa */
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block; /* Hiển thị ngang */
+    width: 100px; /* Độ rộng */
+    text-align: center;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+nav li:hover {
+    background-color: #555; /* Hiệu ứng hover */
+}
+
+/* 4. Quy tắc cho main */
+main {
+    background-color: #ffffff; /* Màu nền */
+    padding: 20px;
+    font-size: 18px; /* Kích thước phông chữ */
+    line-height: 1.6; /* Chiều cao dòng */
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ccc; /* Viền */
+    border-radius: 8px; /* Bo góc */
+}
+
+/* 5. Quy tắc cho footer */
+footer {
+    background-color: #4CAF50; /* Màu nền */
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 6. Quy tắc cho h1 */
+h1 {
+    font-family: 'Georgia', serif; /* Phông chữ */
+    text-align: center; /* Căn giữa */
+    color: #fff; /* Màu chữ */
+}
+
+/* 7. Quy tắc cho p */
+p {
+    line-height: 1.8; /* Chiều cao dòng */
+    color: #333; /* Màu chữ */
+}
