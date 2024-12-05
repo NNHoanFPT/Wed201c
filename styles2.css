@@ -1,0 +1,92 @@
+/* 1. Skip to Main Content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* 2. Styling for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* 3. Styling for nav */
+nav {
+    display: inline-block;
+    width: 80%;
+    margin: 0 auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+nav img {
+    width: 10%;
+    vertical-align: middle;
+}
+
+/* 4. Comment out styling for li */
+ /*
+li {
+    /* Original styling commented out */
+    /* display: block;
+       padding: 5px;
+       color: #000;
+}
+*/
+
+/* 5. Styling for grid class */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: center;
+    align-items: start;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+/* 6. Styling for flex class */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.flex div {
+    background-color: #ddd;
+    margin: 5px;
+    padding: 20px;
+    flex: 1 1 30%;
+    text-align: center;
+}
+
+/* 7. General styling */
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
