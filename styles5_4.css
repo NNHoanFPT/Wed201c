@@ -1,0 +1,66 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+aside {
+    display: none;
+}
+
+/* Mobile View - Default */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
+/* Larger Screen View */
+@media (min-width: 769px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    aside {
+        display: block;
+        width: 30%;
+        background-color: #f4f4f4;
+        padding: 15px;
+    }
+
+    section {
+        width: 65%;
+    }
+}
