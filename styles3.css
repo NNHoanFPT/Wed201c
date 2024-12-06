@@ -1,0 +1,103 @@
+/* 1. Skip to Main Content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px;
+    text-decoration: none;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+/* 2. General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* 3. Navigation Styles */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+    list-style: none;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+/* 4. Grid Styles */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.grid img {
+    width: 100%;
+    border: 5px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* 5. Flex Styles */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.flex div {
+    background-color: #ddd;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 30%;
+}
+
+/* 6. nth-child Example */
+.grid img:nth-child(2n) {
+    border-radius: 20px;
+}
+
+/* 7. Hover Example */
+.grid img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
