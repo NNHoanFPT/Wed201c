@@ -1,0 +1,51 @@
+/* Mobile View - Default Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container div {
+    width: 90%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: lightblue;
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tablet View - Media Query at 772px */
+@media (min-width: 772px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .container div {
+        width: 45%; /* Chiếm 45% chiều rộng khung nhìn */
+        margin: 10px;
+    }
+
+    .container img {
+        max-height: 30vh; /* Không vượt quá 30% chiều cao khung nhìn */
+    }
+}
+
+/* Large Screen View - Media Query at 998px */
+@media (min-width: 998px) {
+    .container div {
+        width: 30%; /* Chiếm 30% chiều rộng khung nhìn */
+    }
+}
