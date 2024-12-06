@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #image {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            background-color: #f4f4f4;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 20px;
+        }
+        .preview {
+            margin: 10px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Interactive Photo Gallery</h1>
+    <div id="image">Hover over an image below to display here.</div>
+    <div>
+        <img class="preview" src="image1.jpg" alt="Image 1 description">
+        <img class="preview" src="image2.jpg" alt="Image 2 description">
+        <img class="preview" src="image3.jpg" alt="Image 3 description">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
