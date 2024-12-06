@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Photo Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #image {
+            width: 500px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            background-color: #f4f4f4;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #555;
+            font-size: 20px;
+        }
+        figure {
+            display: inline-block;
+            margin: 10px;
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+        figure img {
+            width: 100%;
+            height: auto;
+        }
+        figure figcaption {
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Accessible Photo Gallery</h1>
+    <div id="image">Hover over an image below to display here.</div>
+    <div id="gallery">
+        <figure>
+            <img src="image1.jpg" alt="Description of Image 1">
+            <figcaption>Image 1</figcaption>
+        </figure>
+        <figure>
+            <img src="image2.jpg" alt="Description of Image 2">
+            <figcaption>Image 2</figcaption>
+        </figure>
+        <figure>
+            <img src="image3.jpg" alt="Description of Image 3">
+            <figcaption>Image 3</figcaption>
+        </figure>
+        <figure>
+            <img src="image4.jpg" alt="Description of Image 4">
+            <figcaption>Image 4</figcaption>
+        </figure>
+        <figure>
+            <img src="image5.jpg" alt="Description of Image 5">
+            <figcaption>Image 5</figcaption>
+        </figure>
+        <figure>
+            <img src="image6.jpg" alt="Description of Image 6">
+            <figcaption>Image 6</figcaption>
+        </figure>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
