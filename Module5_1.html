@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Presentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        main {
+            margin: 20px;
+        }
+        video {
+            max-width: 80%;
+            margin: 20px 0;
+        }
+        textarea {
+            width: 80%;
+            height: 100px;
+            margin: 20px 0;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Video Presentation
+    </header>
+    <main>
+        <h2>Upload and Play Your Video</h2>
+        <video id="videoPlayer" controls>
+            <source src="example.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div>
+            <label for="comments">Write a short note about your presentation:</label><br>
+            <textarea id="comments" placeholder="Enter your comments here..."></textarea><br>
+            <button onclick="submitComment()">Submit</button>
+        </div>
+        <p id="confirmation" style="color: green; display: none;">Your comment has been submitted!</p>
+    </main>
+
+    <script>
+        function submitComment() {
+            const commentBox = document.getElementById("comments");
+            if (commentBox.value.trim() === "") {
+                alert("Please write a comment before submitting.");
+            } else {
+                document.getElementById("confirmation").style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
